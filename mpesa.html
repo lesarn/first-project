@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>M-Pesa Payment</title>
+
+<link rel="stylesheet" href="mpesa.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="payment-box">
+
+    <img src="images/mpesa/mpesa-logo.png" alt="M-Pesa" class="logo">
+
+    <h1>Lipa na M-Pesa</h1>
+
+    <p>Complete your payment</p>
+
+    <div class="amount-box">
+
+        <h2>Total Amount</h2>
+
+        <h1>Ksh <span id="amount">0</span></h1>
+
+    </div>
+
+    <form id="payment-form">
+
+        <label>Phone Number</label>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="07XXXXXXXX"
+            required>
+
+        <button type="submit">
+
+            Pay Now
+
+        </button>
+
+    </form>
+
+    <div id="status">
+
+    <div id="loader" class="loader"></div>
+
+    <p id="status-text"></p>
+
+    <div id="receipt" class="receipt">
+
+        <h3>Payment Successful</h3>
+
+        <p><strong>Receipt No:</strong> <span id="receipt-no"></span></p>
+
+        <p><strong>Phone:</strong> <span id="receipt-phone"></span></p>
+
+        <p><strong>Amount:</strong> Ksh <span id="receipt-amount"></span></p>
+
+        <p><strong>Date:</strong> <span id="receipt-date"></span></p>
+
+        <button id="continue-btn">Continue</button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="mpesa.js"></script>
+
+</body>
+
+</html>

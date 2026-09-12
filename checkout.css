@@ -1,0 +1,209 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f6e8ea;
+
+    padding:40px;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.checkout-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.checkout-container h1{
+
+    text-align:center;
+
+    color:#4A1E24;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================
+   ORDER SUMMARY
+========================================== */
+
+.order-summary{
+
+    background:#fafafa;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.order-summary h2{
+
+    margin-bottom:20px;
+
+    color:#4A1E24;
+
+}
+
+.order-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.order-summary h3{
+
+    margin-top:20px;
+
+    text-align:right;
+
+    color:#4A1E24;
+
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+#checkout-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+#checkout-form input,
+#checkout-form textarea{
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    outline:none;
+
+}
+
+#checkout-form textarea{
+
+    resize:none;
+
+    height:150px;
+
+}
+
+#checkout-form input:focus,
+#checkout-form textarea:focus{
+
+    border-color:#f6a623;
+
+    box-shadow:0 0 10px rgba(246,166,35,.25);
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+#checkout-form button{
+
+    padding:15px;
+
+    border:none;
+
+    background:#f6a623;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#checkout-form button:hover{
+
+    background:#d98d16;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .checkout-container{
+
+        padding:25px;
+
+    }
+
+    .order-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+}

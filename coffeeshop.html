@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T's Urban Brew</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="coffeeshop.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="header">
+
+        <div class="logo">
+            <i class="fas fa-mug-hot"></i>
+            <span>T's Urban Brew</span>
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+            <div class="cart-icon">
+
+    <i class="fas fa-shopping-cart"></i>
+
+    <span id="cart-count">0</span>
+
+</div>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HOME ================= -->
+
+    <section class="hero fade-section" id="home">
+
+        <div class="hero-text">
+
+            <h3 class="welcome">Sip & Smile</h3>
+
+            <h1 class="typing">
+                Taste the difference in every cup!
+            </h1>
+
+            <p>
+                Discover coffee that inspires every moment.
+                Freshly brewed coffee made from premium beans,
+                served with passion and care.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#menu" class="btn order">
+                    Order Now
+                </a>
+
+                <a href="#contact" class="btn contact">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/hero/e1.png" alt="Coffee">
+
+        </div>
+
+    </section>
+
+    <div class="scroll-down">
+        <i class="fas fa-angle-down"></i>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about fade-section" id="about">
+
+    <div class="about-image">
+
+        <img src="images/about/about.jpg" alt="Coffee Shop">
+
+    </div>
+
+    <div class="about-text">
+
+        <h2 class="section-title">About Us</h2>
+
+        <h2>Every Cup Tells A Story</h2>
+
+        <p class="section-subtitle">
+
+            At T's Urban Brew, we believe coffee is more than just a drink—
+            it's an experience. We carefully source premium coffee beans
+            and prepare every cup with passion to give you unforgettable moments.
+
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <i class="fas fa-mug-hot"></i>
+                <span>Premium Coffee</span>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <span>Organic Beans</span>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-wifi"></i>
+                <span>Free WiFi</span>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-heart"></i>
+                <span>Friendly Service</span>
+            </div>
+
+        </div>
+
+        <a href="#menu" class="btn order">
+
+            Explore Menu
+
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- ================= MENU ================= -->
+
+    <!-- ================= MENU ================= -->
+
+<section class="section fade-section" id="menu">
+
+    <h2 class="section-title">Our Menu</h2>
+
+    <h2>Fresh Food & Drinks</h2>
+
+    <p class="menu-subtitle">
+        Choose from our delicious coffee, pastries, fast food and meals.
+    </p>
+    <div class="search-box">
+
+    <i class="fas fa-search"></i>
+
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search food or drinks...">
+
+</div>
+
+    <!-- Menu Categories -->
+
+    <div class="menu-tabs">
+
+        <button class="tab-btn active" data-category="coffee">
+            <i class="fas fa-mug-hot"></i>
+            Coffee
+        </button>
+
+        <button class="tab-btn" data-category="pastries">
+            <i class="fas fa-bread-slice"></i>
+            Pastries
+        </button>
+
+        <button class="tab-btn" data-category="fastfood">
+            <i class="fas fa-pizza-slice"></i>
+            Fast Food
+        </button>
+
+        <button class="tab-btn" data-category="meals">
+            <i class="fas fa-drumstick-bite"></i>
+            Meals
+        </button>
+
+    </div>
+
+    <!-- Products -->
+
+    <div class="menu-container">
+
+        <!-- ================= COFFEE ================= -->
+
+        <div class="menu-card coffee">
+
+            <img src="images/coffee/espresso.jpg" alt="Espresso">
+
+            <h3>Espresso</h3>
+
+            <p>Rich Italian coffee.</p>
+
+            <div class="price">
+
+                <span>Ksh 180</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   				data-name="Espresso"
+   				data-price="180">
+   				Order Now
+				</a>
+
+        </div>
+
+        <div class="menu-card coffee">
+
+            <img src="images/coffee/cappuccino.jpg" alt="Cappuccino">
+
+            <h3>Cappuccino</h3>
+
+            <p>Creamy and delicious.</p>
+
+            <div class="price">
+
+                <span>Ksh 250</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="Cappuccino"
+   data-price="250">
+   Order Now
+</a>
+
+        </div>
+
+        <div class="menu-card coffee">
+
+            <img src="images/coffee/latte.jpg" alt="Latte">
+
+            <h3>Latte</h3>
+
+            <p>Fresh milk & espresso.</p>
+
+            <div class="price">
+
+                <span>Ksh 300</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="Latte"
+   data-price="300">
+   Order Now
+</a>
+
+        </div>
+
+        <!-- ================= PASTRIES ================= -->
+
+        <div class="menu-card pastries">
+
+            <img src="images/pastries/muffin.jpg" alt="Muffin">
+
+            <h3>Chocolate Muffin</h3>
+
+            <p>Freshly baked.</p>
+
+            <div class="price">
+
+                <span>Ksh 180</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="Chocolate Muffin"
+   data-price="180">
+   Order Now
+</a>
+
+        </div>
+
+        <div class="menu-card pastries">
+
+            <img src="images/pastries/donut.jpg" alt="Donut">
+
+            <h3>Glazed Donut</h3>
+
+            <p>Soft & sweet.</p>
+
+            <div class="price">
+
+                <span>Ksh 150</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="Glazed Donut"
+   data-price="150">
+   Order Now
+</a>
+
+        </div>
+
+        <!-- ================= FAST FOOD ================= -->
+
+        <div class="menu-card fastfood">
+
+            <img src="images/fastfood/fries.jpg" alt="Fries">
+
+            <h3>French Fries</h3>
+
+            <p>Crispy golden fries.</p>
+
+            <div class="price">
+
+                <span>Ksh 250</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="French Fries"
+   data-price="250">
+   Order Now
+</a>
+
+        </div>
+
+        <div class="menu-card fastfood">
+
+            <img src="images/fastfood/pizza.jpg" alt="Pizza">
+
+            <h3>Chicken Pizza</h3>
+
+            <p>Cheesy & delicious.</p>
+
+            <div class="price">
+
+                <span>Ksh 750</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="Chicken Pizza"
+   data-price="750">
+   Order Now
+</a>
+
+        </div>
+
+        <!-- ================= MEALS ================= -->
+
+        <div class="menu-card meals">
+
+            <img src="images/meals/wings.jpg" alt="Chicken Wings">
+
+            <h3>Chicken Wings</h3>
+
+            <p>BBQ glazed wings.</p>
+
+            <div class="price">
+
+                <span>Ksh 650</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="Chicken Wings"
+   data-price="650">
+   Order Now
+</a>
+
+        </div>
+
+        <div class="menu-card meals">
+
+            <img src="images/meals/grilled-chicken.jpg" alt="Grilled Chicken">
+
+            <h3>Grilled Chicken</h3>
+
+            <p>Served with fries.</p>
+
+            <div class="price">
+
+                <span>Ksh 950</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="Grilled Chicken"
+   data-price="950">
+   Order Now
+</a>
+
+        </div>
+
+        <div class="menu-card meals">
+
+            <img src="images/meals/samosa.jpg" alt="Samosa">
+
+            <h3>Beef Samosa</h3>
+
+            <p>Crispy pastry.</p>
+
+            <div class="price">
+
+                <span>Ksh 80</span>
+
+                <div class="stars">
+
+                    ★★★★★
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn order add-cart"
+   data-name="Beef Samosa"
+   data-price="80">
+   Order Now
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <!-- ==========================================
+     TESTIMONIALS
+========================================== -->
+
+<section class="testimonials section fade-section" id="testimonials">
+
+    <h2 class="section-title">
+What Our Customers Say
+</h2>
+
+    <p class="section-subtitle">
+        Hear what our happy customers have to say.
+    </p>
+
+    <div class="testimonial-slider">
+
+        <div class="testimonial active">
+
+            <img src="images/testimonials/customer1.jpeg" alt="Kiel">
+
+            <h3>Kiel L.</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "The cappuccino is fantastic and the muffins are always fresh.
+                I love this place!"
+            </p>
+
+        </div>
+
+        <div class="testimonial">
+
+            <img src="images/testimonials/customer2.jpeg" alt="James">
+
+            <h3>James K.</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Best pizza and chicken wings in town. Fast service and great prices."
+            </p>
+
+        </div>
+
+        <div class="testimonial">
+
+            <img src="images/testimonials/customer3.png" alt="Reen">
+
+            <h3>Reen N.</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "A wonderful atmosphere with delicious coffee. Highly recommended!"
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= GALLERY ================= -->
+
+    <!-- ==========================================
+     GALLERY
+========================================== -->
+
+<section class="gallery-section section fade-section" id="gallery">
+
+    <h2 class="section-title">
+Our Gallery
+</h2>
+
+    <p class="section-subtitle">
+        Freshly prepared food and beverages.
+    </p>
+
+    <div class="gallery-grid">
+
+        <img src="images/gallery/coffee1.jpg" alt="Coffee">
+
+        <img src="images/gallery/pizza.jpg" alt="Pizza">
+
+        <img src="images/gallery/muffin.jpg" alt="Muffin">
+
+        <img src="images/gallery/donut.jpg" alt="Donut">
+
+        <img src="images/gallery/fries.jpg" alt="Fries">
+
+        <img src="images/gallery/chicken.jpg" alt="Chicken">
+
+        <img src="images/gallery/samosa.jpg" alt="Samosa">
+
+        <img src="images/gallery/latte.jpg" alt="Latte">
+
+        <img src="images/gallery/burger.jpg" alt="Burger">
+
+    </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close-lightbox">&times;</span>
+
+    <img id="lightbox-img">
+
+</div>
+
+    <!-- ================= CONTACT ================= -->
+
+    <!-- ==========================================
+     CONTACT
+========================================== -->
+
+<section class="contact-section section fade-section" id="contact">
+
+    <h2 class="section-title">
+Contact Us
+</h2>
+
+    <p class="section-subtitle">
+        We'd love to hear from you.
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
+
+        <div class="contact-info">
+
+            <h3>Get In Touch</h3>
+
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                Eldoret, Kenya
+            </p>
+
+            <p>
+                <i class="fas fa-phone"></i>
+                +254 711 556 406
+            </p>
+
+            <p>
+                <i class="fas fa-envelope"></i>
+                info@tsurbanbrew.com
+            </p>
+
+            <p>
+                <i class="fas fa-clock"></i>
+                Mon - Sun : 7:00 AM - 10:00 PM
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-form">
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number">
+
+                <textarea
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button
+                    type="submit"
+                    class="send-btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="map-section">
+
+<iframe
+src="https://www.google.com/maps?q=Eldoret%20Kenya&output=embed"
+width="100%"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</section>
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo -->
+
+        <div class="footer-box">
+
+            <h2>
+                <i class="fas fa-mug-hot"></i>
+                T's Urban Brew
+            </h2>
+
+            <p>
+                Fresh coffee, delicious meals and unforgettable moments every day.
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#menu">Menu</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+
+            <p><i class="fas fa-envelope"></i> info@tsurbanbrew.com</p>
+
+            <p><i class="fas fa-map-marker-alt"></i> Eldoret, Kenya</p>
+
+        </div>
+
+        <!-- Newsletter -->
+
+        <div class="footer-box">
+
+            <h3>Newsletter</h3>
+
+            <p>Subscribe for offers and updates.</p>
+
+            <form id="newsletterForm">
+
+                <input
+                type="email"
+                placeholder="Enter your email"
+                required>
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Social Icons -->
+
+    <div class="footer-social">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 T's Urban Brew. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<!-- Back To Top -->
+
+<a href="#home" class="back-top">
+
+<i class="fas fa-arrow-up"></i>
+
+</a>
+    <!-- Shopping Cart -->
+
+<div class="cart-panel" id="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="close-cart">&times;</button>
+
+    </div>
+
+    <div id="cart-items">
+
+        <p>Your cart is empty.</p>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>Total: Ksh <span id="cart-total">0</span></h3>
+
+        <a href="checkout.html" class="btn order">
+    Checkout
+</a>
+
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | T's Urban Brew</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>
+            <i class="fas fa-mug-hot"></i>
+            Urban Brew
+        </h2>
+
+        <ul>
+
+            <li class="active">
+                <i class="fas fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fas fa-coffee"></i>
+                Products
+            </li>
+
+            <li>
+                <i class="fas fa-shopping-cart"></i>
+                Orders
+            </li>
+
+            <li>
+                <i class="fas fa-users"></i>
+                Customers
+            </li>
+
+            <li>
+                <i class="fas fa-chart-pie"></i>
+                Reports
+            </li>
+
+            <li>
+                <i class="fas fa-right-from-bracket"></i>
+                Logout
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="content">
+
+        <h1>Dashboard Overview</h1>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fas fa-shopping-cart"></i>
+
+                <h2 id="orders">120</h2>
+
+                <p>Total Orders</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-money-bill-wave"></i>
+
+                <h2>KSh <span id="sales">58,450</span></h2>
+
+                <p>Total Sales</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-users"></i>
+
+                <h2 id="customers">87</h2>
+
+                <p>Customers</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-coffee"></i>
+
+                <h2 id="products">18</h2>
+
+                <p>Products</p>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================================
+     PRODUCT MANAGEMENT
+========================================== -->
+
+<h<!-- ============================
+     PRODUCT MANAGEMENT
+============================ -->
+
+<h2 style="margin-top:40px;color:#3a1015;">
+Product Management
+</h2>
+
+<div class="product-form">
+
+    <input
+        type="text"
+        id="productName"
+        placeholder="Product Name">
+
+    <input
+        type="number"
+        id="productPrice"
+        placeholder="Price">
+
+    <button id="addProduct">
+        Add Product
+    </button>
+
+</div>
+
+<table id="productTable">
+
+    <thead>
+
+        <tr>
+
+            <th>Product</th>
+
+            <th>Price</th>
+
+            <th>Action</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+    </tbody>
+
+</table>
+
+<br><br>
+
+<h2 style="margin-top:40px;">
+Recent Orders
+</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Order ID</th>
+
+                <th>Customer</th>
+
+                <th>Amount</th>
+
+                <th>Status</th>
+
+            </tr>
+
+            <tr>
+
+                <td>#1001</td>
+
+                <td>Ezekiel</td>
+
+                <td>KSh 1,250</td>
+
+                <td>Completed</td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1002</td>
+
+                <td>Sarah</td>
+
+                <td>KSh 860</td>
+
+                <td>Preparing</td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1003</td>
+
+                <td>James</td>
+
+                <td>KSh 1,740</td>
+
+                <td>Delivered</td>
+
+            </tr>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f6e8ea;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+.confirmation-box{
+
+    background:white;
+
+    width:90%;
+
+    max-width:600px;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.check-icon{
+
+    font-size:90px;
+
+    color:#28a745;
+
+    margin-bottom:20px;
+
+}
+
+.confirmation-box h1{
+
+    color:#4A1E24;
+
+    margin-bottom:20px;
+
+}
+
+.confirmation-box p{
+
+    color:#555;
+
+    margin-bottom:15px;
+
+    line-height:1.7;
+
+}
+
+.details{
+
+    background:#f9f9f9;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    margin:30px 0;
+
+}
+
+.home-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#f6a623;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.home-btn:hover{
+
+    background:#d98d16;
+
+}
